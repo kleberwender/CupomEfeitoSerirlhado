@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62, 8%;
+}
+
+section {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cupom {
+  background: rgb(255, 255, 228);
+  min-width: 320px;
+  max-width: 100px;
+  min-height: 200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow:  5px 5px 15px #bfbfbf,
+             -5px -5px 15px #ffffff;
+}
+
+/*Responsávelpeolo serrilhado*/
+.cupom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 29px;
+  right: 0;
+  bottom: -24px;
+  left: 0;
+  background: /*Toda a mágina está aqui*/
+   linear-gradient(-45deg, transparent 70%,rgb(255, 255, 228) 75%),
+    linear-gradient(45deg, transparent 70%, rgb(255, 255, 228) 75%);
+  background-repeat: repeat-x; /*Repetindo no eixo X, ou seja, no Horizontal*/
+  background-size: 15px 20px, 15px 20px; /*Aqui você define o tamanho e largura do serrilhado*/
+  background-position: center;
+}
+
+div.header {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  padding: 5px 8px;
+  
+  text-transform: uppercase;
+}
+
+div.header > h1 {
+  font-size: 1.5rem;
+}
+
+div.header > h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-left: 6px;
+}
+
+div.header > p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+div.header div.res {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+}
+
+div.header div.res :nth-child(2) {
+  font-weight: 700;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: 0px;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+
+div.resum {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+
+div.resum div.primary {
+  display: flex;
+  padding-left: 5px;
+  text-align: center;
+}
+
+div.resum div.primary > .prod {
+  display: block;
+}
+
+div.resum div.primary div.prod :nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+div.resum div.primary div.prod :nth-child(2) {
+  color: #bbbbbb;
+  padding: 10px 10px 20px 0px;
+}
+div.resum div.prodTotal {
+  padding-left: 30px;
+  color: #bbbbbb;
+}
+.hrRow {
+  width: 100%;
+  height: 1px;
+  border: 0px;
+  border-top: 1px solid rgba(199, 199, 199, 0.24);
+  padding: 15px;
+}
+
+div.resum div.totalProdutos {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0px 10px 10px 0px;
+}
+
+.rhTotal {
+  width: 100%;
+  height: 1px;
+  border: 0px;
+  border-top: 1px solid rgba(199, 199, 199);
+}
+
+div.total {
+  display: flex;
+  flex-direction: column;
+}
+.linha {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.totalTexto,
+.totalValorTexto {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.totalTexto span {
+  color: rgb(96, 187, 96); 
+}
+.totalValorTexto span {
+  color: rgb(96, 187, 96);
+}
+
+div p.valorTotal {
+  width: 100%;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 15px 10px;
+}
+
+.dataHora {
+  text-align: left;
+  padding: 15px 0px 10px 10px;
+  color: #bbbbbb;
+}
